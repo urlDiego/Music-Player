@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="top__controls">
+            <i class='bx bx-arrow-back'></i>
+            <i class='bx bx-list-ul' ></i>
+        </div>
+        <div class="icon">
+            <img src="/assets/img/img.jpg">
+        </div>
+        <div class="info__music">
+            <h2 class="main__tittle">ICONICOS</h2>
+            <h2 class="sub__tittle">Ramma, Tadu Vasquez</h2>
+        </div>
+        <div class="load__music">
+            <audio id="song">
+                <source src="/assets/aud/RAMMA - ICÓNICOS (Video Oficial).mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class='bx bx-skip-previous'></i></div>
+                <div onclick="playPause()"><i class='bx bx-play' id="ctrlIcon"></i></div>
+                <div><i class='bx bx-skip-next'></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/src/app.js"></script>
+    
+</body>
+</html>
